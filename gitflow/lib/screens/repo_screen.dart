@@ -9,8 +9,15 @@ class RepoScreen extends StatefulWidget {
 }
 
 class _RepoScreenState extends State<RepoScreen> {
+  String currentBranch = 'main';
+  List<String> branches = ['main'];
+  List<String> commitHistory = [];
+
+  final TextEditingController commitMessageController = TextEditingController();
+  final TextEditingController newBranchController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
